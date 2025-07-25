@@ -1,0 +1,50 @@
+<nav class="custom-navbar">
+  <div class="logo">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/images/logo3.png" alt="Logo" width="100px" height="50px" >  Naturiste Tirban Plant   </a>  
+  </div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a href="#" class="nav-link">Produse</a>
+      <ul class="dropdown-menu">
+        <li><a href="/tincturi">Tincturi</a></li>
+        <li><a href="/ceaiuri">Ceaiuri</a></li>
+        <li><a href="/siropuri">Siropuri</a></li>
+        <li><a href="/creme">Creme</a></li>
+   </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Price
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" >Tinctura 500ml - 45 Ron</a></li>
+        <li><a class="dropdown-item" >Siropul 500ml - 45 Ron</a></li>
+        <li><a class="dropdown-item" >Crema 250g - 45 Ron</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" >Siropul 200ml -25 Ron </a></li>
+        <li><a class="dropdown-item" >Tinctura 200ml - 25 Ron </a></li>
+        <li><a class="dropdown-item" >Crema 100g -  25 Ron </a></li>
+        <li><a class="dropdown-item" >Crema 60g -  15 Ron </a></li>
+
+      </ul>
+    </li>
+    <li><a href="#" class="nav-link disabled">Disabled</a></li>
+
+
+    <li class="cart">
+      <a href="/cart"> Coș de cumpărături ({{ cartItemCount }}) <!-- Afișează numărul de articole -->
+      </a>
+    </li>
+    <li class="cart">
+      <a href="/about-us"> About us
+      </a>
+    </li>
+  </ul>
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+</nav>
+

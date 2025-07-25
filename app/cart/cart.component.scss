@@ -1,0 +1,152 @@
+/* Stilizare generală a formularului */
+form {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Alinierea etichetelor și câmpurilor de input */
+  .form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Câmpurile de input */
+  .form-control, .form-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Grupul de input */
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-right: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  /* Feedback de validare */
+  .valid-feedback {
+    display: none;
+    color: #28a745;
+    font-size: 0.9rem;
+  }
+  
+  .invalid-feedback {
+    display: none;
+    color: #dc3545;
+    font-size: 0.9rem;
+  }
+  
+  /* Stilizare pentru câmpurile valide și invalide */
+  .is-valid .valid-feedback {
+    display: block;
+  }
+  
+  .is-invalid .invalid-feedback {
+    display: block;
+  }
+  
+  .is-valid .form-control {
+    border-color: #28a745;
+  }
+  
+  .is-invalid .form-control {
+    border-color: #dc3545;
+  }
+  
+  /* Checkbox și eticheta lui */
+  .form-check {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .form-check-input {
+    margin-top: 0.3rem;
+  }
+  
+  .form-check-label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  .form-check-input.is-invalid {
+    border-color: #dc3545;
+  }
+  
+  .invalid-feedback {
+    font-size: 0.8rem;
+  }
+  
+  /* Butonul de submit */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.5);
+  }
+  
+  /* Coloană (pentru a face formularul responsive) */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4, .col-md-3, .col-md-6 {
+    margin-bottom: 15px;
+    margin-left: 40px;
+  }
+  
+  .col-12 {
+    flex: 1 0 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4, .col-md-3, .col-md-6 {
+      flex: 1 0 100%;
+    }
+  }
+ .icon{
+  width: 80px;
+  height: 80px;
+  margin-left: 900px;
+  color: #227a44;
+  margin-top: 20px;
+ }
+
+  

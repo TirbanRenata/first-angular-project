@@ -1,0 +1,24 @@
+.flex-1 {
+    flex: 1;
+}
+
+.background {
+    background-color: rgb(230,230,230);
+    width: 100%;
+
+}
+
+.scroll {
+    overflow: auto;
+    min-height: 90vh;
+    max-height: 90vh;
+}
+ .left{
+    width: 800px;
+    height: 800px;
+    text-align: left;
+}
+.right{
+    width: 800px;
+    height: 800px;
+}

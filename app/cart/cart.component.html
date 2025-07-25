@@ -1,0 +1,105 @@
+<div >
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+    <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
+    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
+  </svg>
+</div>
+<form class="row g-3">
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label">First name</label>
+    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label">Last name</label>
+    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationServerUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend3">email</span>
+      <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationServer03" class="form-label">City</label>
+    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+    <div id="validationServer03Feedback" class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationServer04" class="form-label">Județ</label>
+    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+        <option selected disabled value="">Alege...</option>
+        <option value="AB">Alba</option>
+        <option value="AR">Arad</option>
+        <option value="AG">Argeș</option>
+        <option value="BC">Bacău</option>
+        <option value="BH">Bihor</option>
+        <option value="BN">Bistrița-Năsăud</option>
+        <option value="BR">Brăila</option>
+        <option value="BT">Botoșani</option>
+        <option value="BV">Brașov</option>
+        <option value="BS">București</option>
+        <option value="CS">Caraș-Severin</option>
+        <option value="CL">Călărași</option>
+        <option value="CP">Cluj</option>
+        <option value="CV">Covasna</option>
+        <option value="DB">Dâmbovița</option>
+        <option value="DO">Dolj</option>
+        <option value="GL">Galați</option>
+        <option value="GR">Giurgiu</option>
+        <option value="GJ">Gorj</option>
+        <option value="GI">Gheorgheni</option>
+        <option value="HR">Harghita</option>
+        <option value="HD">Hunedoara</option>
+        <option value="IL">Ialomița</option>
+        <option value="IF">Ilfov</option>
+        <option value="ID">Ialomița</option>
+        <option value="IS">Iași</option>
+        <option value="IF">Ilfov</option>
+        <option value="IF">Ialomița</option>
+        <option value="IL">Ialomița</option>
+        <option value="GR">Giurgiu</option>
+        <option value="GL">Galați</option>
+        <option value="GJ">Gorj</option>
+        <option value="GI">Gheorgheni
+   </option>
+    </select>
+    <div id="validationServer04Feedback" class="invalid-feedback">
+        Te rugăm să selectezi un județ valid.
+    </div>
+
+
+  </div>
+  <div class="col-md-3">
+    <label for="validationServer05" class="form-label">Zip</label>
+    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+    <div id="validationServer05Feedback" class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Agree to terms and conditions
+      </label>
+      <div id="invalidCheck3Feedback" class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>

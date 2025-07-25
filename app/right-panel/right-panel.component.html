@@ -1,0 +1,38 @@
+<div class="h-100 p-3 d-flex flex-colum justify-content-between">
+    <div class="bg-white">
+        <div class="d-flex justify-content-between p-3 background">
+            <div>
+                <span class="h3">{{ personalDetails.name }}</span>
+                <span class="text-white ms-3">{{ personalDetails.jobTitle }}</span>
+                <div class="d-flex mt-3" *ngIf="personalDetails.email">
+                    <i class="bi bi-envelope-fill"></i>
+                    <p class="ms-2">{{ personalDetails.email }}</p>
+                </div>
+                <div class="d-flex" *ngIf="personalDetails.phoneNumber">
+                    <i class="bi bi-phone-fill"></i>
+                    <p class="ms-2">{{ personalDetails.phoneNumber }}</p>
+                </div>
+                <div class="d-flex" *ngIf="personalDetails.address">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p class="ms-2">{{ personalDetails.address }}</p>
+                </div>
+            </div>
+            <div>
+                <img class="rounded-circle profile" [src]="personalDetails.imageUrl">
+            </div>
+        </div>
+
+        <div class="p-3">
+            <div>
+                <p class="h4">Profile</p>
+                <div class="border-left ms-3 ps-2">
+                    Produsele noastre sunt autorizate de IBA Bucureşti (Institutul Naţional de Cercetare – Dezvoltare pentru Bioresurse Alimentare), ceea ce înseamnă că pot fi comercializate şi în farmacii. Putem spune că suntem printre puţinii care au această autorizaţie din zona noastră.Scopul nostru este să venim în ajutorul celor bolnavi dar nu numai, şi a celor care doresc să beneficieze de avantajul produselor noastre. Totodată, facem şi tratamente (combinaţii de plante) personalizate, la cererea clientului. Spre exemplu, dacă cineva doreşte o combinaţie de 3, 4, sau 6 plante sau o alifie dintr-o plantă sau mai multe plante, sau o tinctură ce noi nu o avem printre produsele noastre, noi în cel mai scurt timp posibil le preparăm.
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <div class="text-center rounded">
+        <button class="btn btn-success">Download PDF</button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="product-detail-container">
+  <div *ngIf="product" class="product-info">
+    <div class="product-image">
+      <img [src]="product.image" alt="{{ product.name }}" />
+    </div>
+    <div class="product-details">
+      <h1>{{ product.name }}</h1>
+      <p class="product-description">{{ product.description }}</p>
+      <p class="product-price">{{ product.price }} RON</p>
+      <button (click)="addToCart(product)" class="add-to-cart-btn">Adaugă în coș</button>
+    </div>
+  </div>
+  <div *ngIf="!product" class="product-not-found">
+    <p>Produsul nu a fost găsit!</p>
+  </div>
+</div>

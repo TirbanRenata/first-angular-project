@@ -1,0 +1,89 @@
+/* Stiluri pentru navbar */
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;  /* Împinge logo-ul și meniul de margini opuse */
+  align-items: center;
+  background-color: #207132;  /* Culoare de fundal pentru navbar */
+  padding: 10px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră pentru navbar */
+}
+
+
+
+
+/* Meniul navbar-ului */
+.custom-navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;  /* Adaugă spațiu între linkuri */
+}
+
+.custom-navbar .nav-links li {
+  display: inline;
+}
+
+.custom-navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar .nav-links a:hover {
+  background-color: #3498db;  /* Culoare la hover */
+  color: white;
+}
+
+.custom-navbar .nav-links a.disabled {
+  color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+/* Dropdown - stilizarea meniului */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; /* Ascunde meniul dropdown inițial */
+  position: absolute;
+  top: 100%;
+  left: -60%;
+  background-color:#207132;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Arată meniul când se face hover pe produs */
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #3498db;
+}
+
+/* Ajustare pentru body pentru a preveni suprapunerea cu navbar-ul */
+body {
+  padding-top: 70px; /* Ajustează înălțimea în funcție de navbar-ul tău */
+}
+
+.form-control {
+  margin-right: 2px;
+}

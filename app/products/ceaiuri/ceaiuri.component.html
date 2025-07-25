@@ -1,0 +1,14 @@
+<div class="products-page">
+    <h1>Ceaiuri din plante 100% naturale, prelucrate manual</h1>
+  
+    <div class="product-list">
+      <div class="product" *ngFor="let product of products">
+        <img class="product-image" [src]="product.image" alt="{{ product.name }}">
+        <div class="card-body">
+          <h5 class="product-title">{{ product.name }}</h5>
+          <p class="product-description">{{ product.description }}</p>
+          <a href="#" class="btn">Vezi mai mult</a>
+        </div>
+      </div>
+    </div>
+  </div>

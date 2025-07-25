@@ -1,0 +1,94 @@
+/* Stiluri pentru pagina de produse */
+.products-page {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 60px 20px; /* Adaugă spațiu în jurul paginii */
+    background-color:#047a35;
+  }
+ 
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #e4ece6; /* Culoare verde pentru titlu */
+  }
+  
+  /* Lista de produse */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid responsive pentru produse */
+    gap: 30px; /* Spațiu între produsele din grid */
+    justify-content: center;
+  }
+  
+  /* Stiluri pentru fiecare produs */
+  .product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: translateY(-10px); /* Efect de ridicare la hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Umbră mai puternică */
+  }
+  
+  /* Imaginea produsului */
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+  }
+  
+  /* Corpul cardului de produs */
+  .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .product-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* Stiluri pentru buton */
+  .btn {
+    background-color: #207132;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3498db; /* Culoare la hover */
+  }
+  
+  /* Media Queries pentru dispozitive mobile */
+  @media (max-width: 768px) {
+    .products-page {
+      padding: 40px 10px;
+    }
+  
+    .product-list {
+      grid-template-columns: 1fr; /* O singură coloană pe dispozitive mai mici */
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
